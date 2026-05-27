@@ -19,5 +19,5 @@ public partial class Ingatlanok
 
     public string KepUrl { get; set; } = null!;
 
-    public virtual Kategoriak KategoriaNavigation { get; set; } = null!;
+    public virtual Kategoria KategoriaNavigation { get; set; } = null!;
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Fábián_Bernát_backend.DbModels;
 
-public partial class Kategoriak
+public partial class Kategoria
 {
     public int Id { get; set; }
 

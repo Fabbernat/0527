@@ -16,13 +16,14 @@ public partial class RealEstateContext : DbContext
     {
     }
 
-    public virtual DbSet<Hirdetesek> Hirdeteseks { get; set; }
+    public virtual DbSet<Hirdetes> Hirdetesek { get; set; }
 
-    public virtual DbSet<Kategoriak> Kategoriaks { get; set; }
+    public virtual DbSet<Kategoria> Kategoriak { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseMySql("server=localhost;database=fabian_bernat_backend;user=root", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.4.32-mariadb"));
+    {
+        optionsBuilder.UseMySql("server=localhost;database=fabian_bernat_backend;user=root", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.4.32-mariadb"));
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -30,7 +31,7 @@ public partial class RealEstateContext : DbContext
             .UseCollation("utf8mb4_hungarian_ci")
             .HasCharSet("utf8mb4");
 
-        modelBuilder.Entity<Hirdetesek>(entity =>
+        modelBuilder.Entity<Hirdetes>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
@@ -57,13 +58,13 @@ public partial class RealEstateContext : DbContext
                 .HasColumnName("leiras");
             entity.Property(e => e.Tehermentes).HasColumnName("tehermentes");
 
-            entity.HasOne(d => d.KategoriaNavigation).WithMany(p => p.Hirdeteseks)
+            entity.HasOne(d => d.KategoriaNavigation).WithMany()
                 .HasForeignKey(d => d.Kategoria)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("fk_hirdetesek_kategoriak");
         });
 
-        modelBuilder.Entity<Kategoriak>(entity =>
+        modelBuilder.Entity<Kategoria>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 

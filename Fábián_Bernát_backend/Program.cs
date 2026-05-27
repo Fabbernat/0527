@@ -1,5 +1,5 @@
-using Microsoft.EntityFrameworkCore;
 using Fábián_Bernát_backend.DbModels;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 

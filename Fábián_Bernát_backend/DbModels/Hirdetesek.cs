@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Fábián_Bernát_backend.DbModels;
 
-public partial class Hirdetesek
+public partial class Hirdetes
 {
     public int Id { get; set; }
 
@@ -19,5 +19,5 @@ public partial class Hirdetesek
 
     public string KepUrl { get; set; } = null!;
 
-    public virtual Kategoriak KategoriaNavigation { get; set; } = null!;
+    public virtual Kategoria KategoriaNavigation { get; set; } = null!;
 }

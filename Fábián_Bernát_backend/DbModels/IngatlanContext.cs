@@ -18,7 +18,7 @@ public partial class IngatlanContext : DbContext
 
     public virtual DbSet<Ingatlanok> Ingatlanoks { get; set; }
 
-    public virtual DbSet<Kategoriak> Kategoriaks { get; set; }
+    public virtual DbSet<Kategoria> Kategoriak { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -64,7 +64,7 @@ public partial class IngatlanContext : DbContext
                 .HasConstraintName("fk_hirdetesek_kategoriak");
         });
 
-        modelBuilder.Entity<Kategoriak>(entity =>
+        modelBuilder.Entity<Kategoria>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 

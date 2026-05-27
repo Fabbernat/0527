@@ -21,7 +21,7 @@ public class IngatlanController : ControllerBase
     {
         var data = await (
             from ingatlan in _db.Set<Ingatlanok>()
-            join kategoria in _db.Set<Kategoriak>()
+            join kategoria in _db.Set<Kategoria>()
                 on ingatlan.Kategoria equals kategoria.Id
             select new
             {
@@ -52,7 +52,7 @@ public class IngatlanController : ControllerBase
             return BadRequest("Hiányos adatok.");
         }
 
-        bool categoryExists = await _db.Set<Kategoriak>()
+        bool categoryExists = await _db.Set<Kategoria>()
             .AnyAsync(k => k.Id == dto.Kategoria.Value);
 
         if (!categoryExists)
