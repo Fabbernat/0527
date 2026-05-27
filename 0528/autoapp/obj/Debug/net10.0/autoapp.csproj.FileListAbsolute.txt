@@ -1,0 +1,15 @@
+D:\0527\0528\autoapp\bin\Debug\net10.0\autoapp.exe
+D:\0527\0528\autoapp\bin\Debug\net10.0\autoapp.deps.json
+D:\0527\0528\autoapp\bin\Debug\net10.0\autoapp.runtimeconfig.json
+D:\0527\0528\autoapp\bin\Debug\net10.0\autoapp.dll
+D:\0527\0528\autoapp\bin\Debug\net10.0\autoapp.pdb
+D:\0527\0528\autoapp\obj\Debug\net10.0\autoapp.GeneratedMSBuildEditorConfig.editorconfig
+D:\0527\0528\autoapp\obj\Debug\net10.0\autoapp.AssemblyInfoInputs.cache
+D:\0527\0528\autoapp\obj\Debug\net10.0\autoapp.AssemblyInfo.cs
+D:\0527\0528\autoapp\obj\Debug\net10.0\autoapp.csproj.CoreCompileInputs.cache
+D:\0527\0528\autoapp\obj\Debug\net10.0\autoapp.sourcelink.json
+D:\0527\0528\autoapp\obj\Debug\net10.0\autoapp.dll
+D:\0527\0528\autoapp\obj\Debug\net10.0\refint\autoapp.dll
+D:\0527\0528\autoapp\obj\Debug\net10.0\autoapp.pdb
+D:\0527\0528\autoapp\obj\Debug\net10.0\autoapp.genruntimeconfig.cache
+D:\0527\0528\autoapp\obj\Debug\net10.0\ref\autoapp.dll
