@@ -39,45 +39,46 @@ public class IngatlanController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create([FromBody] CreateIngatlanDto dto)
+public async Task<IActionResult> Create([FromBody] CreateIngatlanDto? dto)
+{
+    if (
+        dto is null ||
+        dto.Kategoria is null ||
+        string.IsNullOrWhiteSpace(dto.Leiras) ||
+        dto.Tehermentes is null ||
+        dto.Ar is null ||
+        string.IsNullOrWhiteSpace(dto.KepUrl)
+    )
     {
-        if (
-            dto.Kategoria is null ||
-            string.IsNullOrWhiteSpace(dto.Leiras) ||
-            dto.Tehermentes is null ||
-            dto.Ar is null ||
-            string.IsNullOrWhiteSpace(dto.KepUrl)
-        )
-        {
-            return BadRequest("Hiányos adatok.");
-        }
-
-        bool categoryExists = await _db.Set<Kategoria>()
-            .AnyAsync(k => k.Id == dto.Kategoria.Value);
-
-        if (!categoryExists)
-        {
-            return BadRequest("Hiányos adatok.");
-        }
-
-        var ingatlan = new Ingatlanok
-        {
-            Kategoria = dto.Kategoria.Value,
-            Leiras = dto.Leiras,
-            HirdetesDatuma = dto.HirdetesDatuma ?? DateOnly.FromDateTime(DateTime.Today),
-            Tehermentes = dto.Tehermentes.Value,
-            Ar = dto.Ar.Value,
-            KepUrl = dto.KepUrl
-        };
-
-        _db.Set<Ingatlanok>().Add(ingatlan);
-        await _db.SaveChangesAsync();
-
-        return StatusCode(StatusCodes.Status201Created, new
-        {
-            Id = ingatlan.Id
-        });
+        return BadRequest("Hiányos adatok.");
     }
+
+    bool categoryExists = await _db.Set<Kategoria>()
+        .AnyAsync(k => k.Id == dto.Kategoria.Value);
+
+    if (!categoryExists)
+    {
+        return BadRequest("Hiányos adatok.");
+    }
+
+    var ingatlan = new Ingatlanok
+    {
+        Kategoria = dto.Kategoria.Value,
+        Leiras = dto.Leiras,
+        HirdetesDatuma = dto.HirdetesDatuma ?? DateOnly.FromDateTime(DateTime.Today),
+        Tehermentes = dto.Tehermentes.Value,
+        Ar = dto.Ar.Value,
+        KepUrl = dto.KepUrl
+    };
+
+    _db.Set<Ingatlanok>().Add(ingatlan);
+    await _db.SaveChangesAsync();
+
+    return StatusCode(StatusCodes.Status201Created, new
+    {
+        Id = ingatlan.Id
+    });
+}
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
