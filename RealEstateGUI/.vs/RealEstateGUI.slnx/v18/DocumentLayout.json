@@ -3,12 +3,15 @@
   "WorkspaceRootPath": "D:\\0527\\RealEstateGUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CCC0967-32E8-4CE0-AE3D-7CCF375438EF}|RealEstateGUI.csproj|d:\\0527\\realestategui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9CCC0967-32E8-4CE0-AE3D-7CCF375438EF}|RealEstateGUI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A29A1D32-0FA6-3362-6B95-DF75BC65938A}|RealEstateGUI.csproj|d:\\0527\\realestategui\\ingatlanok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A29A1D32-0FA6-3362-6B95-DF75BC65938A}|RealEstateGUI.csproj|solutionrelative:ingatlanok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CCC0967-32E8-4CE0-AE3D-7CCF375438EF}|RealEstateGUI.csproj|d:\\0527\\realestategui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CCC0967-32E8-4CE0-AE3D-7CCF375438EF}|RealEstateGUI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66D4891B-7BE2-9937-0C04-FFECA5FA2DC6}|..\\RealEstate\\RealEstate.csproj|d:\\0527\\realestate\\dbmysqlmodels\\realestatecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A29A1D32-0FA6-3362-6B95-DF75BC65938A}|RealEstateGUI.csproj|d:\\0527\\realestategui\\ingatlanok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A29A1D32-0FA6-3362-6B95-DF75BC65938A}|RealEstateGUI.csproj|solutionrelative:ingatlanok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,24 +34,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\0527\\RealEstateGUI\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\0527\\RealEstateGUI\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBAAAAAAAAAAAAAAAA==",
+              "Title": "RealestateContext.cs",
+              "DocumentMoniker": "D:\\0527\\RealEstate\\DbMysqlModels\\RealestateContext.cs",
+              "RelativeDocumentMoniker": "..\\RealEstate\\DbMysqlModels\\RealestateContext.cs",
+              "ToolTip": "D:\\0527\\RealEstate\\DbMysqlModels\\RealestateContext.cs",
+              "RelativeToolTip": "..\\RealEstate\\DbMysqlModels\\RealestateContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T17:28:16.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ingatlanok.cs",
+              "DocumentMoniker": "D:\\0527\\RealEstateGUI\\Ingatlanok.cs",
+              "RelativeDocumentMoniker": "Ingatlanok.cs",
+              "ToolTip": "D:\\0527\\RealEstateGUI\\Ingatlanok.cs",
+              "RelativeToolTip": "Ingatlanok.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwCEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-27T16:48:47.779Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\0527\\RealEstateGUI\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\0527\\RealEstateGUI\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Ingatlanok.cs [Design]",
+              "DocumentMoniker": "D:\\0527\\RealEstateGUI\\Ingatlanok.cs",
+              "RelativeDocumentMoniker": "Ingatlanok.cs",
+              "ToolTip": "D:\\0527\\RealEstateGUI\\Ingatlanok.cs [Design]",
+              "RelativeToolTip": "Ingatlanok.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-27T16:38:41.317Z",
               "EditorCaption": " [Design]"
