@@ -1,6 +1,6 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
+  --text: #0e0913;
+  --text-h: #050407 !important;
   --bg: #fff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
@@ -57,7 +57,6 @@
   text-align: center;
   border-inline: 1px solid var(--border);
   min-height: 100svh;
-  display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
@@ -108,4 +107,86 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+
+/* CG ajanlas */
+body {
+  margin: 0;
+  background: white;
+}
+
+.page-container {
+  max-width: 1100px;
+}
+
+.home-page {
+  max-width: 1960px;
+  min-height: 620px;
+  margin: 2rem auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.home-page h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.home-buttons {
+  left: 4rem;
+  right: 4rem;
+  bottom: 3rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.home-buttons .btn {
+  width: 45%;
+}
+
+.offers-table th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.offers-table td {
+  vertical-align: middle;
+}
+
+.offer-img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.newad-form {
+  max-width: 600px;
+}
+
+@media (max-width: 576px) {
+  .home-page {
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  .home-buttons {
+    left: 1rem;
+    right: 1rem;
+    bottom: 2rem;
+    flex-direction: column;
+  }
+
+  .home-buttons .btn {
+    width: 100%;
+  }
+
+  .offer-img {
+    width: 120px;
+    height: 90px;
+  }
 }
