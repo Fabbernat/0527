@@ -1,0 +1,76 @@
+{
+  "info": {
+    "name": "Viragbolt",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000"
+    }
+  ],
+  "item": [
+    {
+      "name": "GET all flowers",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/flowers"
+      }
+    },
+    {
+      "name": "GET flower by id",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/flowers/1"
+      }
+    },
+    {
+      "name": "POST flower",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nev\": \"Levendula\",\n  \"kategoriaId\": 1,\n  \"leiras\": \"Illatos, lila virágú növény.\",\n  \"keszlet\": 15,\n  \"ar\": 1200,\n  \"kepUrl\": \"https://example.com/levendula.jpg\"\n}"
+        },
+        "url": "{{baseUrl}}/api/flowers"
+      }
+    },
+    {
+      "name": "PUT flower",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nev\": \"Vörös rózsa\",\n  \"leiras\": \"A vörös rózsa népszerű dísznövény.\",\n  \"ar\": 1200,\n  \"keszlet\": 5\n}"
+        },
+        "url": "{{baseUrl}}/api/flowers/1"
+      }
+    },
+    {
+      "name": "DELETE flower",
+      "request": {
+        "method": "DELETE",
+        "url": "{{baseUrl}}/api/flowers/1"
+      }
+    },
+    {
+      "name": "GET categories",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/categories"
+      }
+    }
+  ]
+}

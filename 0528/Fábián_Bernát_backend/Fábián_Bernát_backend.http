@@ -1,0 +1,6 @@
+@Fábián_Bernát_backend_HostAddress = http://localhost:5240
+
+GET {{Fábián_Bernát_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
