@@ -165,7 +165,7 @@
             Controls.Add(mainTableLayoutPanel);
             Name = "Ingatlanok";
             Text = "Ingatlanok";
-            Load += Form1_Load;
+            Load += MainForm_Load;
             mainTableLayoutPanel.ResumeLayout(false);
             detailsTableLayoutPanel.ResumeLayout(false);
             detailsTableLayoutPanel.PerformLayout();

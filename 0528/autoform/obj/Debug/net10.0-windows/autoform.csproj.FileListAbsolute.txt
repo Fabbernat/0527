@@ -1,0 +1,15 @@
+D:\0527\0528\autoform\bin\Debug\net10.0-windows\autoform.exe
+D:\0527\0528\autoform\bin\Debug\net10.0-windows\autoform.deps.json
+D:\0527\0528\autoform\bin\Debug\net10.0-windows\autoform.runtimeconfig.json
+D:\0527\0528\autoform\bin\Debug\net10.0-windows\autoform.dll
+D:\0527\0528\autoform\bin\Debug\net10.0-windows\autoform.pdb
+D:\0527\0528\autoform\obj\Debug\net10.0-windows\autoform.GeneratedMSBuildEditorConfig.editorconfig
+D:\0527\0528\autoform\obj\Debug\net10.0-windows\autoform.AssemblyInfoInputs.cache
+D:\0527\0528\autoform\obj\Debug\net10.0-windows\autoform.AssemblyInfo.cs
+D:\0527\0528\autoform\obj\Debug\net10.0-windows\autoform.csproj.CoreCompileInputs.cache
+D:\0527\0528\autoform\obj\Debug\net10.0-windows\autoform.sourcelink.json
+D:\0527\0528\autoform\obj\Debug\net10.0-windows\autoform.dll
+D:\0527\0528\autoform\obj\Debug\net10.0-windows\refint\autoform.dll
+D:\0527\0528\autoform\obj\Debug\net10.0-windows\autoform.pdb
+D:\0527\0528\autoform\obj\Debug\net10.0-windows\autoform.genruntimeconfig.cache
+D:\0527\0528\autoform\obj\Debug\net10.0-windows\ref\autoform.dll

@@ -15,11 +15,11 @@ namespace RealEstateGUI
             Text = "Ingatlanok";
             MinimumSize = new Size(500, 250);
 
-            Load += Form1_Load;
+            Load += MainForm_Load;
             loadAdsButton.Click += LoadAdsButton_Click;
         }
 
-        private void Form1_Load(object? sender, EventArgs e)
+        private void MainForm_Load(object? sender, EventArgs e)
         {
             var sellers = _db.Sellers
                 .OrderBy(s => s.Name)
