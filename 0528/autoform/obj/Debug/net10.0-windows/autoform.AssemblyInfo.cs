@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("autoform")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d2090565ca67e77760cf845c5b258a7a64170f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc4c536deb5748021577cb0ac6be5586f6b5b3f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("autoform")]
 [assembly: System.Reflection.AssemblyTitleAttribute("autoform")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
