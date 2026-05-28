@@ -129,3 +129,32 @@ input {
     display: none;
   }
 }
+
+/* Logó bal oldalra */
+#logo {
+    left: 2%;
+    right: auto;
+}
+
+/* Nyitó oldal háttérképe */
+#nyito {
+    background-image: url("fokep.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Árnyék az áruk képein hover esetén */
+.arukep img:hover {
+    box-shadow: 2px 2px 20px black;
+}
+
+/* Footer mobilnézetben balra igazítva */
+@media screen and (max-width: 768px) {
+    footer,
+    footer h3,
+    footer ul,
+    footer ul li {
+        text-align: left;
+    }
+}
